@@ -1,0 +1,45 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+@mixin hover-state {
+	&:hover, &:active, &:focus {
+		@content;
+	}
+}
+
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+@mixin clearfix-after() {
+	clear: both;
+}
+
+@mixin light-on-dark() {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin uppercase( $sizeValue: false, $letterSpace: 4 ) {
+	@if ( $sizeValue ) {
+		@include font-size( $sizeValue );
+	}
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: $letterSpace * 1px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin sr-clip() {
+	clip: rect( 1px, 1px, 1px, 1px );
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
