@@ -31,40 +31,45 @@ require_once __DIR__ . '/mock-widget-subscriptions.php';
 
 /**
  * Force-set some widgets by visiting
- *	[URL]/wp-admin/admin-ajax.php?action=b17-force-widgets
+ *	[URL]/wp-admin/admin-ajax.php?action=b18-force-widgets
  */
 function boston_2018_force_widgets() {
 	$sidebars = get_option( 'sidebars_widgets' );
 
 	$banner = array(
 		'title' => '',
-		'text' => '<p class="level-1">WordCamp Boston</p><p class="level-4">taking place at</p><p class="level-2">Boston University</p><p class="level-4">on</p><p class="level-3">July 22 &amp; 23</p><p class="level-5"><a href="#" class="cta-button">Get your ticket</a></p>',
+		'content' =>
+			'<p class="level-1">Two days of WordPress design, development, marketing, content, and business.</p>' .
+			'<p class="level-3">July 21 &mdash; 22<sup>nd</sup></p>',
 		'filter' => false,
 	);
-	$twitter = array(
-		'title' => 'Join the conversation!',
-		'text' => '<a href="https://twitter.com/hashtag/wcbos" class="button">Tweet with #wcbos</a>',
-		'filter' => true,
+	$actions = array(
+		'title' => '',
+		'content' =>
+			'<a href="#" class="button">Register</a>' .
+			'<a href="#" class="button">Volunteer</a>' .
+			'<a href="#" class="button">Speak</a>',
+		'filter' => false,
 	);
 	$sponsors = array(
-		'title' => 'Sponsors',
+		'title' => 'Platinum Sponsors',
 	);
 	$subscribe = [];
 
-	$widget_text = array( 1 => $banner, 2 => $twitter, '_multiwidget' => 1 );
+	$widget_text = array( 1 => $banner, 2 => $actions, '_multiwidget' => 1 );
 	$widget_sponsors = array( 1 => $sponsors, '_multiwidget' => 1 );
 	$widget_subscription = array( 1 => $subscribe, '_multiwidget' => 1 );
 
-	update_option( 'widget_text', $widget_text );
+	update_option( 'widget_custom_html', $widget_text );
 	update_option( 'widget_wcb_sponsors', $widget_sponsors );
 	update_option( 'widget_mock_subscription_widget', $widget_subscription );
 
-	$sidebars['header-1'] = [ 'text-1', 'mock_subscription_widget-1' ];
-	$sidebars['header-2'] = [ 'text-2' ];
+	$sidebars['header-1'] = [ 'custom_html-1', 'custom_html-2' ];
+	$sidebars['footer-1'] = [ 'mock_subscription_widget-1' ];
 	$sidebars['sidebar-1'] = [ 'wcb_sponsors-1' ];
 
 	update_option( 'sidebars_widgets', $sidebars );
 
 	wp_die();
 }
-add_action( 'wp_ajax_b17-force-widgets', 'boston_2018_force_widgets' );
+add_action( 'wp_ajax_b18-force-widgets', 'boston_2018_force_widgets' );
