@@ -1,0 +1,144 @@
+body {
+	color: $color-text;
+	font-family: $font-body;
+	@include font-size( 1.1 );
+	line-height: 1.55;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: $font-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: none;
+}
+
+hr {
+	height: 2px;
+	background-color: rgba( $dark-blue, 0.4 );
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+a, a:visited {
+	color: $fuchsia;
+	text-decoration: none;
+
+	@include hover-state {
+		color: darken( $fuchsia, 5% );
+		text-decoration: underline;
+	}
+}
+
+.entry-title {
+	@include font-size( 3.2 );
+}
+
+.entry-content {
+	h1, h2 {
+		margin: 30px 0 15px;
+		line-height: 1.32143;
+	}
+	h1 {
+		@include font-size( 3.2 );
+	}
+	h2 {
+		@include font-size( 2.4 );
+	}
+	h3 {
+		@include font-size( 2.0 );
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+select,
+textarea {
+	margin: 0;
+	width: 100%;
+	@include uppercase( 0.8, 0.5 );
+	line-height: 1;
+	color: $color-text;
+	background: $white;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 10px 15px 5px;
+}
+
+select {
+	width: auto;
+	padding: 10px 30px 5px 15px;
+	line-height: 1.5;
+}
+
+textarea {
+	padding: 10px 20px 8px;
+	width: 100%;
+	line-height: 1.5;
+	border-width: 1px;
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+button,
+a.cta-button {
+	display: inline-block;
+	margin: 0;
+	padding: 14px 30px 8px;
+	border-radius: 0;
+	@include uppercase( 0.8, 0.5 );
+	line-height: 1;
+	text-decoration: none;
+	color: $color-text;
+	background: $teal;
+	border: none;
+	text-shadow: none;
+	box-shadow: none;
+
+	@include hover-state {
+	}
+}
+
+.wp-caption {
+	border: none;
+	margin-bottom: 1em;
+
+	img {
+		margin: 0;
+		max-width: 100%;
+	}
+
+	.wp-caption-text {
+		margin: 10px 0 8px;
+		text-align: left;
+	}
+}

@@ -2,3 +2,139 @@
  * Theme Name: Boston 2018
  * Template: campsite-2017
  */
+body {
+  color: #1d215f;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 11px;
+  font-size: 1.1rem;
+  line-height: 1.55; }
+
+button,
+input,
+select,
+textarea {
+  font-family: "proxima-nova", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: none; }
+
+hr {
+  height: 2px;
+  background-color: rgba(29, 33, 95, 0.4); }
+
+p {
+  margin: 0 0 15px; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+a, a:visited {
+  color: #a00a74;
+  text-decoration: none; }
+  a:hover, a:active, a:focus, a:visited:hover, a:visited:active, a:visited:focus {
+    color: #880963;
+    text-decoration: underline; }
+
+.entry-title {
+  font-size: 32px;
+  font-size: 3.2rem; }
+
+.entry-content h1, .entry-content h2 {
+  margin: 30px 0 15px;
+  line-height: 1.32143; }
+
+.entry-content h1 {
+  font-size: 32px;
+  font-size: 3.2rem; }
+
+.entry-content h2 {
+  font-size: 24px;
+  font-size: 2.4rem; }
+
+.entry-content h3 {
+  font-size: 20px;
+  font-size: 2rem; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+select,
+textarea {
+  margin: 0;
+  width: 100%;
+  font-size: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  color: #1d215f;
+  background: #ffffff;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+  padding: 10px 15px 5px; }
+
+select {
+  width: auto;
+  padding: 10px 30px 5px 15px;
+  line-height: 1.5; }
+
+textarea {
+  padding: 10px 20px 8px;
+  width: 100%;
+  line-height: 1.5;
+  border-width: 1px; }
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold; }
+
+input[type='button'],
+input[type='submit'],
+input[type='reset'],
+button,
+a.cta-button {
+  display: inline-block;
+  margin: 0;
+  padding: 14px 30px 8px;
+  border-radius: 0;
+  font-size: 8px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1;
+  text-decoration: none;
+  color: #1d215f;
+  background: #38ccd5;
+  border: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.wp-caption {
+  border: none;
+  margin-bottom: 1em; }
+  .wp-caption img {
+    margin: 0;
+    max-width: 100%; }
+  .wp-caption .wp-caption-text {
+    margin: 10px 0 8px;
+    text-align: left; }

@@ -4,22 +4,18 @@ $size-post-width: 760px;
 $bkpt-phone: 400px;
 $bkpt-tablet: 782px;
 
-$font-serif: 'adobe-caslon-pro';
+$font-body: "proxima-nova",sans-serif;
+$font-headers: "freight-sans-condensed-pro",sans-serif;
 
-$color-text: #514645;
-$color-meta: #70655E;
+$dark-blue: #1d215f;
+$teal: #38ccd5;
+$tiffany-blue: #89dfee;
+$fuchsia: #a00a74;
+$tangerine: #ff9700;
+$white: #ffffff;
 
-$beige: #F2E0C9;
-$beige-dark: #E6D4BC;
-$beige-darker: #C8B9A6;
+$ugly-yellow: #c6dc00;
+$ugly-yellow-40: rgba(198, 220, 0, 0.4);
+$ugly-yellow-10: rgba(198, 220, 0, 0.1);
 
-$brown: #514645;
-$brown-light: #B49F81;
-$red: #B43D0A;
-$red-dark: #9A380E;
-
-$img-bg: 'https://2017.boston.wordcamp.org/files/2017/04/wcbos-background-pattern.jpg';
-// $img-map: 'https://2017.boston.wordcamp.org/files/2017/04/wcbos-header-image.png';
-$img-map: 'https://2017.boston.wordcamp.org/files/2017/04/wcbos-header-image-coloradjust.png';
-$img-logo: 'http://svg.redradar.net/boston-2017/logo.svg';
-$img-arr: 'http://svg.redradar.net/boston-2017/arrows.svg';
+$color-text: $dark-blue;
