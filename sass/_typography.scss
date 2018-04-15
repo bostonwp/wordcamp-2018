@@ -1,7 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
 body {
 	color: $color-text;
 	font-family: $font-body;
-	@include font-size( 1.1 );
+	@include font-size( 2.2 );
 	line-height: 1.55;
 }
 
@@ -42,7 +50,7 @@ a, a:visited {
 }
 
 .entry-title {
-	@include font-size( 3.2 );
+	@include font-size( 6.4 );
 }
 
 .entry-content {
@@ -51,13 +59,13 @@ a, a:visited {
 		line-height: 1.32143;
 	}
 	h1 {
-		@include font-size( 3.2 );
+		@include font-size( 6.4 );
 	}
 	h2 {
-		@include font-size( 2.4 );
+		@include font-size( 4.8 );
 	}
 	h3 {
-		@include font-size( 2.0 );
+		@include font-size( 4.0 );
 	}
 }
 
@@ -70,7 +78,7 @@ select,
 textarea {
 	margin: 0;
 	width: 100%;
-	@include uppercase( 0.8, 0.5 );
+	@include uppercase( 1.8 );
 	line-height: 1;
 	color: $color-text;
 	background: $white;
@@ -115,7 +123,7 @@ a.cta-button {
 	margin: 0;
 	padding: 14px 30px 8px;
 	border-radius: 0;
-	@include uppercase( 0.8, 0.5 );
+	@include uppercase( 1.8 );
 	line-height: 1;
 	text-decoration: none;
 	color: $color-text;
