@@ -25,7 +25,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
-@mixin uppercase( $sizeValue: false, $letterSpace: 0.5 ) {
+@mixin uppercase( $sizeValue: false, $letterSpace: 1 ) {
 	@if ( $sizeValue ) {
 		@include font-size( $sizeValue );
 	}
@@ -34,6 +34,11 @@
 	letter-spacing: $letterSpace * 1px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin container( $width ) {
+	margin: 0 auto;
+	max-width: $width;
 }
 
 @mixin sr-clip() {

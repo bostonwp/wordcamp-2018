@@ -2,11 +2,18 @@
  * Theme Name: Boston 2018
  * Template: campsite-2017
  */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
 body {
   color: #1d215f;
   font-family: "proxima-nova", sans-serif;
-  font-size: 11px;
-  font-size: 1.1rem;
+  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 1.55; }
 
 button,
@@ -38,24 +45,24 @@ a, a:visited {
     text-decoration: underline; }
 
 .entry-title {
-  font-size: 32px;
-  font-size: 3.2rem; }
+  font-size: 64px;
+  font-size: 6.4rem; }
 
 .entry-content h1, .entry-content h2 {
   margin: 30px 0 15px;
   line-height: 1.32143; }
 
 .entry-content h1 {
-  font-size: 32px;
-  font-size: 3.2rem; }
+  font-size: 64px;
+  font-size: 6.4rem; }
 
 .entry-content h2 {
-  font-size: 24px;
-  font-size: 2.4rem; }
+  font-size: 48px;
+  font-size: 4.8rem; }
 
 .entry-content h3 {
-  font-size: 20px;
-  font-size: 2rem; }
+  font-size: 40px;
+  font-size: 4rem; }
 
 input[type="text"],
 input[type="email"],
@@ -66,11 +73,11 @@ select,
 textarea {
   margin: 0;
   width: 100%;
-  font-size: 8px;
-  font-size: 0.8rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
@@ -113,11 +120,11 @@ a.cta-button {
   margin: 0;
   padding: 14px 30px 8px;
   border-radius: 0;
-  font-size: 8px;
-  font-size: 0.8rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
@@ -138,3 +145,82 @@ a.cta-button {
   .wp-caption .wp-caption-text {
     margin: 10px 0 8px;
     text-align: left; }
+
+.page-navigation-container {
+  position: relative;
+  z-index: 1;
+  background: #a00a74; }
+  .page-navigation-container .menu-primary-nav-container {
+    margin: 0 auto;
+    max-width: 1290px;
+    position: relative; }
+  .page-navigation-container a {
+    padding: 30px;
+    color: #ffffff;
+    font-size: 18px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1; }
+  .page-navigation-container li:hover,
+  .page-navigation-container li.focus {
+    background: #ffffff; }
+    .page-navigation-container li:hover a,
+    .page-navigation-container li.focus a {
+      color: #a00a74;
+      text-decoration: none; }
+  .page-navigation-container ul ul {
+    top: 78px;
+    background: #ffffff;
+    padding: 10px 0 20px; }
+    .page-navigation-container ul ul a {
+      padding: 8px 30px;
+      color: #a00a74; }
+  .page-navigation-container .callout {
+    position: absolute;
+    right: 0;
+    background: #1d215f; }
+    .page-navigation-container .callout a {
+      padding: 30px 70px; }
+    .page-navigation-container .callout:hover, .page-navigation-container .callout.focus {
+      background: #ff9700; }
+      .page-navigation-container .callout:hover a, .page-navigation-container .callout.focus a {
+        color: #1d215f; }
+  @media (min-width: 1290px) {
+    .page-navigation-container:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: calc( 50vw + 645px);
+      background: #1d215f; } }
+
+.custom-header {
+  background: #1d215f;
+  position: relative; }
+  .custom-header .custom-logo-link {
+    display: block;
+    margin: 0 auto;
+    padding: 140px 0 300px;
+    max-width: 680px; }
+  .custom-header:before, .custom-header:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: ''; }
+  .custom-header:before {
+    height: 300px;
+    background: #38ccd5;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(100% 0%, 100% 100%, 0% 100%); }
+  .custom-header:after {
+    bottom: -1px;
+    height: 400px;
+    background: #ffffff;
+    -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 100% 100%, 0% 100%); }
