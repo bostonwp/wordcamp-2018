@@ -153,8 +153,8 @@ a.cta-button {
   a.cta-button:hover,
   a.cta-button:active,
   a.cta-button:focus {
-    -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1);
-            box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1); }
+    -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(22, 82, 85, 0.2), 0 0.5px 0.5px 0 rgba(22, 82, 85, 0.1);
+            box-shadow: 0 2.5px 7.5px 2.5px rgba(22, 82, 85, 0.2), 0 0.5px 0.5px 0 rgba(22, 82, 85, 0.1); }
 
 .wp-caption {
   border: none;
@@ -285,12 +285,32 @@ a.cta-button {
     color: #1d215f;
     background: #ff9700; }
     #content-widget-1 .button:hover, #content-widget-1 .button:active, #content-widget-1 .button:focus {
-      -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1);
-              box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1); }
+      -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(102, 60, 0, 0.2), 0 0.5px 0.5px 0 rgba(102, 60, 0, 0.1);
+              box-shadow: 0 2.5px 7.5px 2.5px rgba(102, 60, 0, 0.2), 0 0.5px 0.5px 0 rgba(102, 60, 0, 0.1); }
   #content-widget-1 .button:nth-of-type(2) {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #1d215f;
     background: #38ccd5; }
+    #content-widget-1 .button:nth-of-type(2):hover, #content-widget-1 .button:nth-of-type(2):active, #content-widget-1 .button:nth-of-type(2):focus {
+      -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(22, 82, 85, 0.2), 0 0.5px 0.5px 0 rgba(22, 82, 85, 0.1);
+              box-shadow: 0 2.5px 7.5px 2.5px rgba(22, 82, 85, 0.2), 0 0.5px 0.5px 0 rgba(22, 82, 85, 0.1); }
   #content-widget-1 .button:nth-of-type(3) {
+    font-size: 32px;
+    font-size: 3.2rem;
+    line-height: 1;
+    font-weight: 900;
+    text-align: center;
+    text-decoration: none;
+    color: #1d215f;
     background: #c6dc00; }
+    #content-widget-1 .button:nth-of-type(3):hover, #content-widget-1 .button:nth-of-type(3):active, #content-widget-1 .button:nth-of-type(3):focus {
+      -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(79, 88, 0, 0.2), 0 0.5px 0.5px 0 rgba(79, 88, 0, 0.1);
+              box-shadow: 0 2.5px 7.5px 2.5px rgba(79, 88, 0, 0.2), 0 0.5px 0.5px 0 rgba(79, 88, 0, 0.1); }
 
 #primary-sidebar {
   margin: 0 auto;
@@ -379,8 +399,8 @@ body.home .wp-block-cover-image-text {
     color: #1d215f;
     background: #c6dc00; }
     body.home .wp-block-cover-image-text a:hover, body.home .wp-block-cover-image-text a:active, body.home .wp-block-cover-image-text a:focus {
-      -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1);
-              box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1); }
+      -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(79, 88, 0, 0.2), 0 0.5px 0.5px 0 rgba(79, 88, 0, 0.1);
+              box-shadow: 0 2.5px 7.5px 2.5px rgba(79, 88, 0, 0.2), 0 0.5px 0.5px 0 rgba(79, 88, 0, 0.1); }
     body.home .wp-block-cover-image-text a:hover, body.home .wp-block-cover-image-text a:active, body.home .wp-block-cover-image-text a:focus {
       color: #1d215f; }
 

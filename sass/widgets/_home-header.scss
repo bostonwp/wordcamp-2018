@@ -34,10 +34,10 @@
 	}
 
 	.button:nth-of-type( 2 ) {
-		background: $teal;
+		@include button( $teal );
 	}
 
 	.button:nth-of-type( 3 ) {
-		background: $ugly-yellow;
+		@include button( $ugly-yellow );
 	}
 }
