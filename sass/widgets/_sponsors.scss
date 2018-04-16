@@ -1,0 +1,28 @@
+#primary-sidebar {
+	@include container;
+
+	.widget-title {
+		@include font-size( 6.4 );
+		text-align: center;
+	}
+
+	// Hide all but highest level
+	.sponsor-level {
+		&.bronze,
+		&.silver,
+		.sponsor-level-title {
+			display: none;
+		}
+	}
+
+	.sponsor-level {
+		display: grid;
+		grid-template-columns: repeat( 4, 1fr );
+		grid-gap: 30px;
+		align-items: center;
+	}
+
+	.sponsor-logo {
+		padding: 0;
+	}
+}

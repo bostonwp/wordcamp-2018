@@ -1,0 +1,20 @@
+.site-info {
+	padding: 0 0 60px;
+	text-align: center;
+	@include font-size( 1.8 );
+
+	a {
+		color: $dark-blue;
+		text-decoration: underline;
+
+		@include hover-state {
+			color: $fuchsia;
+		}
+	}
+
+	.site-info-generator:after {
+		display: block;
+		content: '';
+		height: 16px;
+	}
+}

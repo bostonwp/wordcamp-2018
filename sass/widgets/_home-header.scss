@@ -1,0 +1,49 @@
+#content-widget-1 {
+	@include container;
+	margin-bottom: 120px;
+
+	.custom-html-widget {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;
+	}
+
+	.widget + .widget {
+		margin-top: 60px;
+	}
+
+	.level-1 {
+		grid-column: 1 / span 2;
+		@include font-size( 6.4 );
+		line-height: 1.1;
+		font-family: $font-header;
+		font-weight: 900;
+		color: $fuchsia;
+	}
+
+	.level-2 {
+		@include font-size( 4.8 );
+		font-family: $font-header;
+		font-weight: 900;
+	}
+
+	.button {
+		display: inline-block;
+		padding: 30px;
+		@include font-size( 3.2 );
+		line-height: 1;
+		font-weight: 900;
+		text-align: center;
+		text-decoration: none;
+		color: $color-text;
+		background: $tangerine;
+	}
+
+	.button:nth-of-type( 2 ) {
+		background: $teal;
+	}
+
+	.button:nth-of-type( 3 ) {
+		background: $ugly-yellow;
+	}
+}

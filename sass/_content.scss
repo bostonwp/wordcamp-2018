@@ -1,0 +1,12 @@
+
+body:not(.home) .site-main {
+	@include container( $size-post-width );
+}
+
+.entry-title {
+	margin-top: 0;
+	color: $fuchsia;
+	font-weight: 900;
+}
+
+@import 'content/home';

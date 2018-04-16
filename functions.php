@@ -34,13 +34,13 @@ require_once __DIR__ . '/mock-widget-subscriptions.php';
  *	[URL]/wp-admin/admin-ajax.php?action=b18-force-widgets
  */
 function boston_2018_force_widgets() {
-	$sidebars = get_option( 'sidebars_widgets' );
+	$sidebars = []; //get_option( 'sidebars_widgets' );
 
 	$banner = array(
 		'title' => '',
 		'content' =>
-			'<p class="level-1">Two days of WordPress design, development, marketing, content, and business.</p>' .
-			'<p class="level-3">July 21 &mdash; 22<sup>nd</sup></p>',
+			'<div class="level-1">Two days of WordPress design, development, marketing, content, and business.</div>' .
+			'<div class="level-2"><strong>July 21&ndash;22<sup>nd</sup> 2018</strong><br />Boston University</div>',
 		'filter' => false,
 	);
 	$actions = array(
@@ -64,7 +64,7 @@ function boston_2018_force_widgets() {
 	update_option( 'widget_wcb_sponsors', $widget_sponsors );
 	update_option( 'widget_mock_subscription_widget', $widget_subscription );
 
-	$sidebars['header-1'] = [ 'custom_html-1', 'custom_html-2' ];
+	$sidebars['before-content-homepage-1'] = [ 'custom_html-1', 'custom_html-2' ];
 	$sidebars['footer-1'] = [ 'mock_subscription_widget-1' ];
 	$sidebars['sidebar-1'] = [ 'wcb_sponsors-1' ];
 

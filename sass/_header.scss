@@ -4,7 +4,7 @@
 	background: $fuchsia;
 
 	.menu-primary-nav-container {
-		@include container( $size-main-width );
+		@include container;
 		position: relative;
 	}
 

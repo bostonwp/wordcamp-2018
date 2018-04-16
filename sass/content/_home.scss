@@ -1,0 +1,42 @@
+body.home {
+	.entry-header,
+	.entry-footer {
+		display: none;
+	}
+
+	.wp-block-cover-image {
+		height: 100vh;
+		min-height: 600px;
+	}
+
+	.wp-block-cover-image-text {
+		max-width: $size-post-width;
+		@include font-size( 2.2 );
+		line-height: 1.55;
+
+		.cfa-title {
+			display: block;
+			margin-bottom: 30px;
+			@include font-size( 6.4 );
+			line-height: 1.1;
+			font-family: $font-header;
+			font-weight: 900;
+			text-align: center;
+		}
+
+		a {
+			display: inline-block;
+			padding: 30px 50px;
+			@include uppercase();
+			line-height: 1;
+			text-align: center;
+			text-decoration: none;
+			color: $color-text;
+			background: $ugly-yellow;
+
+			@include hover-state {
+				color: $color-text;
+			}
+		}
+	}
+}
