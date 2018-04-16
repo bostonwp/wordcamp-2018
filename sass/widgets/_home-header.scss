@@ -30,13 +30,7 @@
 	.button {
 		display: inline-block;
 		padding: 30px;
-		@include font-size( 3.2 );
-		line-height: 1;
-		font-weight: 900;
-		text-align: center;
-		text-decoration: none;
-		color: $color-text;
-		background: $tangerine;
+		@include button( $tangerine );
 	}
 
 	.button:nth-of-type( 2 ) {

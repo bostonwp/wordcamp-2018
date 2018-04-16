@@ -121,21 +121,40 @@ a.cta-button {
   margin: 0;
   padding: 12px 20px 15px;
   border-radius: 0;
+  border: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  font-size: 32px;
+  font-size: 3.2rem;
+  line-height: 1;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  color: #1d215f;
+  background: #38ccd5;
   font-size: 18px;
   font-size: 1.8rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1;
-  text-decoration: none;
-  color: #1d215f;
-  background: #38ccd5;
-  border: none;
-  text-shadow: none;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
+  -moz-osx-font-smoothing: grayscale; }
+  input[type='button']:hover, input[type='button']:active, input[type='button']:focus,
+  input[type='submit']:hover,
+  input[type='submit']:active,
+  input[type='submit']:focus,
+  input[type='reset']:hover,
+  input[type='reset']:active,
+  input[type='reset']:focus,
+  button:hover,
+  button:active,
+  button:focus,
+  a.cta-button:hover,
+  a.cta-button:active,
+  a.cta-button:focus {
+    -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1);
+            box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1); }
 
 .wp-caption {
   border: none;
@@ -265,6 +284,9 @@ a.cta-button {
     text-decoration: none;
     color: #1d215f;
     background: #ff9700; }
+    #content-widget-1 .button:hover, #content-widget-1 .button:active, #content-widget-1 .button:focus {
+      -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1);
+              box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1); }
   #content-widget-1 .button:nth-of-type(2) {
     background: #38ccd5; }
   #content-widget-1 .button:nth-of-type(3) {
@@ -348,16 +370,17 @@ body.home .wp-block-cover-image-text {
   body.home .wp-block-cover-image-text a {
     display: inline-block;
     padding: 30px 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 1;
+    font-weight: 900;
     text-align: center;
     text-decoration: none;
     color: #1d215f;
     background: #c6dc00; }
+    body.home .wp-block-cover-image-text a:hover, body.home .wp-block-cover-image-text a:active, body.home .wp-block-cover-image-text a:focus {
+      -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1);
+              box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15), 0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1); }
     body.home .wp-block-cover-image-text a:hover, body.home .wp-block-cover-image-text a:active, body.home .wp-block-cover-image-text a:focus {
       color: #1d215f; }
 

@@ -48,3 +48,18 @@
 	width: 1px;
 	overflow: hidden;
 }
+
+@mixin button( $bg: $teal, $text: $color-text ) {
+	@include font-size( 3.2 );
+	line-height: 1;
+	font-weight: 900;
+	text-align: center;
+	text-decoration: none;
+	color: $text;
+	background: $bg;
+
+	@include hover-state {
+		box-shadow: 0 2.5px 7.5px 2.5px rgba(29, 33, 95, 0.15),
+					0 0.5px 0.5px 0 rgba(29, 33, 95, 0.1);
+	}
+}

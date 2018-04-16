@@ -27,12 +27,7 @@ body.home {
 		a {
 			display: inline-block;
 			padding: 30px 50px;
-			@include uppercase();
-			line-height: 1;
-			text-align: center;
-			text-decoration: none;
-			color: $color-text;
-			background: $ugly-yellow;
+			@include button( $ugly-yellow );
 
 			@include hover-state {
 				color: $color-text;
