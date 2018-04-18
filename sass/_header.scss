@@ -9,10 +9,11 @@
 	}
 
 	a {
-		padding: 30px 25px;
+		padding: 30px 20px;
 		color: $white;
-		@include uppercase( 1.8 );
+		@include uppercase( 1.8, 1.5 );
 		line-height: 1;
+		font-weight: 900;
 	}
 
 	li:hover,
@@ -33,6 +34,18 @@
 		a {
 			padding: 8px 30px;
 			color: $fuchsia;
+			width: 15em;
+		}
+
+		li:hover,
+		li.focus {
+			a {
+				color: $dark-blue;
+
+				&:before {
+					content: '\25cf';
+				}
+			}
 		}
 	}
 
@@ -68,7 +81,6 @@
 	}
 }
 
-
 .custom-header {
 	background: $dark-blue;
 	position: relative;
@@ -100,5 +112,24 @@
 		height: 400px;
 		background: $white;
 		clip-path: polygon( 0% 0%, 100% 100%, 0% 100% );
+	}
+}
+
+/* Try a smaller logo on interior pages */
+body:not(.home) {
+	.custom-header {
+		.custom-logo-link {
+			padding-top: 100px;
+			padding-bottom: 130px;
+			max-width: 500px;
+		}
+
+		&:before {
+			height: 150px;
+		}
+
+		&:after {
+			height: 200px;
+		}
 	}
 }

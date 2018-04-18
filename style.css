@@ -175,16 +175,17 @@ a.cta-button {
     max-width: 1160px;
     position: relative; }
   .page-navigation-container a {
-    padding: 30px 25px;
+    padding: 30px 20px;
     color: #ffffff;
     font-size: 18px;
     font-size: 1.8rem;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height: 1; }
+    line-height: 1;
+    font-weight: 900; }
   .page-navigation-container li:hover,
   .page-navigation-container li.focus {
     background: #ffffff; }
@@ -198,7 +199,14 @@ a.cta-button {
     padding: 10px 0 20px; }
     .page-navigation-container ul ul a {
       padding: 8px 30px;
-      color: #a00a74; }
+      color: #a00a74;
+      width: 15em; }
+    .page-navigation-container ul ul li:hover a,
+    .page-navigation-container ul ul li.focus a {
+      color: #1d215f; }
+      .page-navigation-container ul ul li:hover a:before,
+      .page-navigation-container ul ul li.focus a:before {
+        content: '\25cf'; }
   .page-navigation-container .callout {
     position: absolute;
     right: 0;
@@ -244,6 +252,18 @@ a.cta-button {
     background: #ffffff;
     -webkit-clip-path: polygon(0% 0%, 100% 100%, 0% 100%);
             clip-path: polygon(0% 0%, 100% 100%, 0% 100%); }
+
+/* Try a smaller logo on interior pages */
+body:not(.home) .custom-header .custom-logo-link {
+  padding-top: 100px;
+  padding-bottom: 130px;
+  max-width: 500px; }
+
+body:not(.home) .custom-header:before {
+  height: 150px; }
+
+body:not(.home) .custom-header:after {
+  height: 200px; }
 
 .widget {
   margin: 0; }
