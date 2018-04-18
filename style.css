@@ -373,6 +373,18 @@ body.home .wp-block-cover-image {
   height: 100vh;
   min-height: 600px;
   max-height: 960px; }
+  body.home .wp-block-cover-image:after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 20vh;
+    min-height: 120px;
+    max-height: 192px;
+    background: #ffffff;
+    -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+            clip-path: polygon(100% 0%, 100% 100%, 0% 100%); }
 
 body.home .wp-block-cover-image-text {
   max-width: 780px;

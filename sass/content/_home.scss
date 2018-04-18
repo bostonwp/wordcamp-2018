@@ -8,6 +8,19 @@ body.home {
 		height: 100vh;
 		min-height: 600px;
 		max-height: 960px;
+
+		&:after {
+			content: '';
+			position: absolute;
+			bottom: -1px;
+			left: 0;
+			right: 0;
+			height: 20vh;
+			min-height: 120px;
+			max-height: 192px;
+			background: $white;
+			clip-path: polygon( 100% 0%, 100% 100%, 0% 100% );
+		}
 	}
 
 	.wp-block-cover-image-text {
