@@ -54,9 +54,16 @@ function boston_2018_force_widgets() {
 	$sponsors = array(
 		'title' => 'Platinum Sponsors',
 	);
+	$inner_actions = array(
+		'title' => '',
+		'content' =>
+			'<div class="label">Looking for speakers!</div>' .
+			'<div class="action"><a href="#" class="button">Apply to speak</a></div>',
+		'filter' => false,
+	);
 	$subscribe = [];
 
-	$widget_text = array( 1 => $banner, 2 => $actions, '_multiwidget' => 1 );
+	$widget_text = array( 1 => $banner, 2 => $actions, 3 => $inner_actions, '_multiwidget' => 1 );
 	$widget_sponsors = array( 1 => $sponsors, '_multiwidget' => 1 );
 	$widget_subscription = array( 1 => $subscribe, '_multiwidget' => 1 );
 
@@ -66,7 +73,7 @@ function boston_2018_force_widgets() {
 
 	$sidebars['before-content-homepage-1'] = [ 'custom_html-1', 'custom_html-2' ];
 	$sidebars['footer-1'] = [ 'mock_subscription_widget-1' ];
-	$sidebars['sidebar-1'] = [ 'wcb_sponsors-1' ];
+	$sidebars['sidebar-1'] = [ 'custom_html-3', 'wcb_sponsors-1' ];
 
 	update_option( 'sidebars_widgets', $sidebars );
 
