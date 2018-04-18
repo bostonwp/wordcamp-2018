@@ -50,7 +50,7 @@
 }
 
 @mixin button( $bg: $teal, $text: $color-text ) {
-	@include font-size( 3.2 );
+	@include font-size( $font-size-level-3 );
 	line-height: 1;
 	font-weight: 900;
 	text-align: center;

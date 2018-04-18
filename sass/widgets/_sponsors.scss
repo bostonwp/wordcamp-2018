@@ -2,7 +2,7 @@
 	@include container;
 
 	.widget-title {
-		@include font-size( 6.4 );
+		@include font-size( $font-size-level-1 );
 		text-align: center;
 	}
 

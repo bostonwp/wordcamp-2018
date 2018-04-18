@@ -14,7 +14,7 @@
 
 	.level-1 {
 		grid-column: 1 / span 2;
-		@include font-size( 6.4 );
+		@include font-size( $font-size-level-1 );
 		line-height: 1.1;
 		font-family: $font-header;
 		font-weight: 900;
@@ -22,7 +22,7 @@
 	}
 
 	.level-2 {
-		@include font-size( 4.8 );
+		@include font-size( $font-size-level-2 );
 		font-family: $font-header;
 		font-weight: 900;
 	}

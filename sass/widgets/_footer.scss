@@ -6,7 +6,7 @@
 	.widget-title {
 		margin-top: 0;
 		color: white;
-		@include font-size( 4.8 );
+		@include font-size( $font-size-level-2 );
 		text-align: center;
 	}
 

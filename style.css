@@ -12,8 +12,8 @@ html {
 body {
   color: #1d215f;
   font-family: "proxima-nova", sans-serif;
-  font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.55; }
 
 button,
@@ -46,24 +46,24 @@ a, a:visited {
     text-decoration: underline; }
 
 .entry-title {
-  font-size: 64px;
-  font-size: 6.4rem; }
+  font-size: 56px;
+  font-size: 5.6rem; }
 
 .entry-content h1, .entry-content h2 {
   margin: 30px 0 15px;
   line-height: 1.32143; }
 
 .entry-content h1 {
-  font-size: 64px;
-  font-size: 6.4rem; }
+  font-size: 56px;
+  font-size: 5.6rem; }
 
 .entry-content h2 {
-  font-size: 48px;
-  font-size: 4.8rem; }
+  font-size: 42px;
+  font-size: 4.2rem; }
 
 .entry-content h3 {
-  font-size: 40px;
-  font-size: 4rem; }
+  font-size: 28px;
+  font-size: 2.8rem; }
 
 input[type="text"],
 input[type="email"],
@@ -125,8 +125,8 @@ a.cta-button {
   text-shadow: none;
   -webkit-box-shadow: none;
           box-shadow: none;
-  font-size: 32px;
-  font-size: 3.2rem;
+  font-size: 28px;
+  font-size: 2.8rem;
   line-height: 1;
   font-weight: 900;
   text-align: center;
@@ -172,10 +172,10 @@ a.cta-button {
   background: #a00a74; }
   .page-navigation-container .menu-primary-nav-container {
     margin: 0 auto;
-    max-width: 1290px;
+    max-width: 1160px;
     position: relative; }
   .page-navigation-container a {
-    padding: 30px;
+    padding: 30px 25px;
     color: #ffffff;
     font-size: 18px;
     font-size: 1.8rem;
@@ -204,19 +204,19 @@ a.cta-button {
     right: 0;
     background: #1d215f; }
     .page-navigation-container .callout a {
-      padding: 30px 70px; }
+      padding: 30px 50px; }
     .page-navigation-container .callout:hover, .page-navigation-container .callout.focus {
       background: #ff9700; }
       .page-navigation-container .callout:hover a, .page-navigation-container .callout.focus a {
         color: #1d215f; }
-  @media (min-width: 1290px) {
+  @media (min-width: 1160px) {
     .page-navigation-container:after {
       content: '';
       position: absolute;
       top: 0;
       bottom: 0;
       right: 0;
-      left: calc( 50vw + 645px);
+      left: calc( 50vw + 580px);
       background: #1d215f; } }
 
 .custom-header {
@@ -226,7 +226,7 @@ a.cta-button {
     display: block;
     margin: 0 auto;
     padding: 140px 0 300px;
-    max-width: 680px; }
+    max-width: 600px; }
   .custom-header:before, .custom-header:after {
     position: absolute;
     bottom: 0;
@@ -252,7 +252,7 @@ a.cta-button {
 
 #content-widget-1 {
   margin: 0 auto;
-  max-width: 1290px;
+  max-width: 1160px;
   margin-bottom: 120px; }
   #content-widget-1 .custom-html-widget {
     display: grid;
@@ -262,22 +262,22 @@ a.cta-button {
     margin-top: 60px; }
   #content-widget-1 .level-1 {
     grid-column: 1 / span 2;
-    font-size: 64px;
-    font-size: 6.4rem;
+    font-size: 56px;
+    font-size: 5.6rem;
     line-height: 1.1;
     font-family: "freight-sans-condensed-pro", sans-serif;
     font-weight: 900;
     color: #a00a74; }
   #content-widget-1 .level-2 {
-    font-size: 48px;
-    font-size: 4.8rem;
+    font-size: 42px;
+    font-size: 4.2rem;
     font-family: "freight-sans-condensed-pro", sans-serif;
     font-weight: 900; }
   #content-widget-1 .button {
     display: inline-block;
     padding: 30px;
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 1;
     font-weight: 900;
     text-align: center;
@@ -288,8 +288,8 @@ a.cta-button {
       -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(102, 60, 0, 0.2), 0 0.5px 0.5px 0 rgba(102, 60, 0, 0.1);
               box-shadow: 0 2.5px 7.5px 2.5px rgba(102, 60, 0, 0.2), 0 0.5px 0.5px 0 rgba(102, 60, 0, 0.1); }
   #content-widget-1 .button:nth-of-type(2) {
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 1;
     font-weight: 900;
     text-align: center;
@@ -300,8 +300,8 @@ a.cta-button {
       -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(22, 82, 85, 0.2), 0 0.5px 0.5px 0 rgba(22, 82, 85, 0.1);
               box-shadow: 0 2.5px 7.5px 2.5px rgba(22, 82, 85, 0.2), 0 0.5px 0.5px 0 rgba(22, 82, 85, 0.1); }
   #content-widget-1 .button:nth-of-type(3) {
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 1;
     font-weight: 900;
     text-align: center;
@@ -314,10 +314,10 @@ a.cta-button {
 
 #primary-sidebar {
   margin: 0 auto;
-  max-width: 1290px; }
+  max-width: 1160px; }
   #primary-sidebar .widget-title {
-    font-size: 64px;
-    font-size: 6.4rem;
+    font-size: 56px;
+    font-size: 5.6rem;
     text-align: center; }
   #primary-sidebar .sponsor-level.bronze, #primary-sidebar .sponsor-level.silver,
   #primary-sidebar .sponsor-level .sponsor-level-title {
@@ -339,12 +339,12 @@ a.cta-button {
   #footer-widget-1 .widget-title {
     margin-top: 0;
     color: white;
-    font-size: 48px;
-    font-size: 4.8rem;
+    font-size: 42px;
+    font-size: 4.2rem;
     text-align: center; }
   #footer-widget-1 .widget {
     margin: 0 auto;
-    max-width: 870px; }
+    max-width: 780px; }
   #footer-widget-1 form {
     display: grid;
     grid-template-columns: 1fr 200px; }
@@ -358,7 +358,7 @@ a.cta-button {
 
 body:not(.home) .site-main {
   margin: 0 auto;
-  max-width: 870px; }
+  max-width: 780px; }
 
 .entry-title {
   margin-top: 0;
@@ -371,18 +371,19 @@ body.home .entry-footer {
 
 body.home .wp-block-cover-image {
   height: 100vh;
-  min-height: 600px; }
+  min-height: 600px;
+  max-height: 960px; }
 
 body.home .wp-block-cover-image-text {
-  max-width: 870px;
-  font-size: 22px;
-  font-size: 2.2rem;
+  max-width: 780px;
+  font-size: 20px;
+  font-size: 2rem;
   line-height: 1.55; }
   body.home .wp-block-cover-image-text .cfa-title {
     display: block;
     margin-bottom: 30px;
-    font-size: 64px;
-    font-size: 6.4rem;
+    font-size: 56px;
+    font-size: 5.6rem;
     line-height: 1.1;
     font-family: "freight-sans-condensed-pro", sans-serif;
     font-weight: 900;
@@ -390,8 +391,8 @@ body.home .wp-block-cover-image-text {
   body.home .wp-block-cover-image-text a {
     display: inline-block;
     padding: 30px 50px;
-    font-size: 32px;
-    font-size: 3.2rem;
+    font-size: 28px;
+    font-size: 2.8rem;
     line-height: 1;
     font-weight: 900;
     text-align: center;
@@ -407,8 +408,8 @@ body.home .wp-block-cover-image-text {
 .site-info {
   padding: 0 0 60px;
   text-align: center;
-  font-size: 18px;
-  font-size: 1.8rem; }
+  font-size: 16px;
+  font-size: 1.6rem; }
   .site-info a {
     color: #1d215f;
     text-decoration: underline; }

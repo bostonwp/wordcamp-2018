@@ -1,7 +1,7 @@
 .site-info {
 	padding: 0 0 60px;
 	text-align: center;
-	@include font-size( 1.8 );
+	@include font-size( $font-size-small );
 
 	a {
 		color: $dark-blue;
