@@ -1,5 +1,6 @@
 #primary-sidebar {
 	margin-top: 60px;
+	overflow: hidden;
 
 	.widget-title {
 		@include font-size( $font-size-level-1 );
@@ -10,9 +11,7 @@
 	.widget_custom_html {
 		// Needs to be wider than the window so that the rotation
 		// doesn't show white at the sides
-		margin-left: -10px;
-		margin-right: -10px;
-		margin-bottom: 90px;
+		margin: 30px -10px 90px;
 		transform: rotate( -2deg );
 		position: relative;
 		background: $fuchsia;

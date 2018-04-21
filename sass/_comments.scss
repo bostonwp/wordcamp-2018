@@ -1,0 +1,52 @@
+.comments-title,
+.comment-reply-title {
+	margin: 40px 0;
+	@include font-size( $font-size-level-3 );
+}
+
+.comment-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	.children {
+		list-style: none;
+		margin: 0 0 0 20px;
+	}
+
+	.comment {
+		margin-bottom: 40px;
+	}
+
+	.comment-meta {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		align-items: center;
+		margin-bottom: 1em;
+		@include font-size( $font-size-small );
+
+		.avatar {
+			margin-right: 10px;
+		}
+
+		.comment-metadata {
+			text-align: right;
+		}
+	}
+
+	.comment-reply-link {
+		display: inline-block;
+		padding: 10px 20px;
+		@include button( $tangerine );
+		@include uppercase( $font-size-small );
+	}
+
+	.thread-even .comment-reply-link {
+		@include button( $ugly-yellow );
+		@include uppercase( $font-size-small );
+	}
+}
+
+.comment-form {
+	margin-bottom: 60px;
+}

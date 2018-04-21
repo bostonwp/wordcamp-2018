@@ -60,7 +60,7 @@
 
 	@include hover-state {
 		$shadow: mix( black, $bg, 60% );
-		box-shadow: 0 3px 8px 3px rgba( $shadow, 0.2),
+		box-shadow: 0 2px 7px 2px rgba( $shadow, 0.2),
 					0 1px 1px 0 rgba( $shadow, 0.1);
 	}
 

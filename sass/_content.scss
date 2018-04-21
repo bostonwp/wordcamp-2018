@@ -1,16 +1,53 @@
-
 body:not(.home) .site-main {
 	@include container( $size-post-width );
 	padding: 0 20px;
 }
 
+.hentry + .hentry {
+	margin-top: 60px;
+}
+
+.page-header {
+	margin: 40px auto 20px;
+}
+
+.page-title {
+	margin-bottom: 10px;
+}
+
+.entry-header,
+.entry-footer {
+	@include font-size( $font-size-small );
+
+	span + span {
+		margin-left: 8px;
+	}
+
+	.byline {
+		display: none;
+
+		body.single & {
+			display: inline;
+			margin-left: 4px;
+		}
+	}
+}
+
 .entry-title {
 	margin-top: 0;
+	margin-bottom: 20px;
 	color: $fuchsia;
 	font-weight: 900;
+	line-height: 1.1;
+}
+
+.entry-summary {
+	margin: 20px 0;
 }
 
 .entry-content {
+	margin: 20px 0 0;
+
 	.contact-form label {
 		margin-bottom: 5px;
 
