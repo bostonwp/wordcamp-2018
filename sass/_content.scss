@@ -10,4 +10,14 @@ body:not(.home) .site-main {
 	font-weight: 900;
 }
 
+.entry-content {
+	.contact-form label {
+		margin-bottom: 5px;
+
+		span {
+			color: $fuchsia;
+		}
+	}
+}
+
 @import 'content/home';

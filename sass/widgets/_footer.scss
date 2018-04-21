@@ -18,6 +18,10 @@
 		display: grid;
 		grid-template-columns: 1fr 200px;
 
+		input {
+			border-radius: 0;
+		}
+
 		p {
 			margin-bottom: 0;
 		}

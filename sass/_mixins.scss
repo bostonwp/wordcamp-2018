@@ -60,11 +60,26 @@
 
 	@include hover-state {
 		$shadow: mix( black, $bg, 60% );
-		box-shadow: 0 2.5px 7.5px 2.5px rgba( $shadow, 0.2),
-					0 0.5px 0.5px 0 rgba( $shadow, 0.1);
+		box-shadow: 0 3px 8px 3px rgba( $shadow, 0.2),
+					0 1px 1px 0 rgba( $shadow, 0.1);
 	}
 
 	&:focus {
 		outline: 2px solid $text;
+	}
+}
+
+@mixin input-placeholder {
+	::-webkit-input-placeholder {
+		@content;
+	}
+	::-moz-placeholder {
+		@content;
+	}
+	:-ms-input-placeholder {
+		@content;
+	}
+	:-moz-placeholder {
+		@content;
 	}
 }
