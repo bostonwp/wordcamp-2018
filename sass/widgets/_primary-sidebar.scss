@@ -1,9 +1,13 @@
 #primary-sidebar {
-	@include container;
 
 	.widget-title {
 		@include font-size( $font-size-level-1 );
 		text-align: center;
+	}
+
+	.wcb_widget_sponsors {
+		@include container;
+		margin: 0 40px;
 	}
 
 	// Hide all but highest level

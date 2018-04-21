@@ -1,6 +1,7 @@
 
 body:not(.home) .site-main {
 	@include container( $size-post-width );
+	padding: 0 20px;
 }
 
 .entry-title {

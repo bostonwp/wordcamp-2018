@@ -301,7 +301,7 @@ body:not(.home) .custom-header:after {
 #content-widget-1 {
   margin: 0 auto;
   max-width: 1160px;
-  margin-bottom: 120px; }
+  margin: 0 40px 120px; }
   #content-widget-1 .custom-html-widget {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -360,25 +360,30 @@ body:not(.home) .custom-header:after {
       -webkit-box-shadow: 0 2.5px 7.5px 2.5px rgba(79, 88, 0, 0.2), 0 0.5px 0.5px 0 rgba(79, 88, 0, 0.1);
               box-shadow: 0 2.5px 7.5px 2.5px rgba(79, 88, 0, 0.2), 0 0.5px 0.5px 0 rgba(79, 88, 0, 0.1); }
 
-#primary-sidebar {
+#primary-sidebar .widget-title {
+  font-size: 56px;
+  font-size: 5.6rem;
+  text-align: center; }
+
+#primary-sidebar .wcb_widget_sponsors {
   margin: 0 auto;
-  max-width: 1160px; }
-  #primary-sidebar .widget-title {
-    font-size: 56px;
-    font-size: 5.6rem;
-    text-align: center; }
-  #primary-sidebar .sponsor-level.bronze, #primary-sidebar .sponsor-level.silver,
-  #primary-sidebar .sponsor-level .sponsor-level-title {
-    display: none; }
-  #primary-sidebar .sponsor-level {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-  #primary-sidebar .sponsor-logo {
-    padding: 0; }
+  max-width: 1160px;
+  margin: 0 40px; }
+
+#primary-sidebar .sponsor-level.bronze, #primary-sidebar .sponsor-level.silver,
+#primary-sidebar .sponsor-level .sponsor-level-title {
+  display: none; }
+
+#primary-sidebar .sponsor-level {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+#primary-sidebar .sponsor-logo {
+  padding: 0; }
 
 #footer-widget-1 {
   background: #1d215f;
@@ -406,7 +411,8 @@ body:not(.home) .custom-header:after {
 
 body:not(.home) .site-main {
   margin: 0 auto;
-  max-width: 780px; }
+  max-width: 780px;
+  padding: 0 20px; }
 
 .entry-title {
   margin-top: 0;
