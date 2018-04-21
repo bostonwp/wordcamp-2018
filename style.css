@@ -638,6 +638,24 @@ body.home .wp-block-cover-image-text {
     body.home .wp-block-cover-image-text a:hover, body.home .wp-block-cover-image-text a:active, body.home .wp-block-cover-image-text a:focus {
       color: #1d215f; }
 
+body.error404 .page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px; }
+  body.error404 .page-content > *:nth-child(1),
+  body.error404 .page-content > *:nth-child(2) {
+    grid-column: 1 / span 2; }
+  body.error404 .page-content .widget + .widget {
+    margin: 0; }
+
+body.error404 .search-form {
+  display: grid;
+  grid-template-columns: 1fr 200px; }
+  body.error404 .search-form label {
+    margin: 0; }
+  body.error404 .search-form input {
+    border-radius: 0; }
+
 .comments-title,
 .comment-reply-title {
   margin: 40px 0;
