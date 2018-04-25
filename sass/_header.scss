@@ -81,6 +81,71 @@
 	}
 }
 
+// We aren't using this
+#site-navigation {
+	display: none !important;
+}
+
+.js .menu-toggle {
+	width: 100%;
+}
+
+@media screen and ( max-width: 37.5em ) {
+	.js .dropdown-toggle {
+		display: none;
+	}
+
+	.page-navigation-container {
+		li {
+			display: block;
+			float: none;
+		}
+
+		li:hover,
+		li.focus {
+			background: transparent;
+
+			a {
+				color: $white;
+				text-decoration: none;
+			}
+		}
+
+		a:focus {
+			background: $white;
+			color: $fuchsia !important;
+		}
+
+		a {
+			padding: 10px !important;
+		}
+
+		ul ul {
+			display: block;
+			float: none;
+			position: static;
+			padding: 0 0 0 15px;
+			box-shadow: none;
+			background: transparent;
+
+			a {
+				width: 100%;
+				color: $white;
+			}
+		}
+
+		.callout {
+			position: static;
+			width: 100%;
+			background: $teal;
+
+			a {
+				color: $dark-blue;
+			}
+		}
+	}
+}
+
 .custom-header {
 	background: $dark-blue;
 	position: relative;

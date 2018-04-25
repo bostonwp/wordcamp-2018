@@ -76,6 +76,7 @@ a, a:visited {
 	}
 	h3 {
 		@include font-size( $font-size-level-3 );
+		line-height: 1.2;
 	}
 }
 

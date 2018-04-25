@@ -1,12 +1,13 @@
 #footer-widget-1 {
 	background: $dark-blue;
 	margin: 120px 0 60px;
-	padding: 120px 0;
+	padding: 120px 20px;
 
 	.widget-title {
 		margin-top: 0;
 		color: white;
 		@include font-size( $font-size-level-2 );
+		line-height: 1.2;
 		text-align: center;
 	}
 
@@ -17,6 +18,10 @@
 	form {
 		display: grid;
 		grid-template-columns: 1fr 200px;
+
+		@media screen and ( max-width: $bkpt-phone ) {
+			grid-template-columns: 1fr;
+		}
 
 		input {
 			border-radius: 0;
@@ -29,6 +34,10 @@
 
 	#subscribe-text {
 		grid-column: 1 / span 2;
+
+		@media screen and ( max-width: $bkpt-phone ) {
+			grid-column: 1;
+		}
 	}
 
 	input[type="submit"] {

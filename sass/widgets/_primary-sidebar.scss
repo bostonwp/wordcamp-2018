@@ -4,8 +4,10 @@
 
 	.widget-title {
 		@include font-size( $font-size-level-1 );
+		line-height: 1.2;
 		text-align: center;
 		margin-top: 0;
+		margin-bottom: 60px;
 	}
 
 	.widget_custom_html {
@@ -50,6 +52,7 @@
 		.label {
 			font-family: $font-header;
 			@include font-size( $font-size-level-2 );
+			line-height: 1.1;
 			color: $white;
 		}
 
@@ -69,6 +72,13 @@
 				box-shadow: inset 0 0 0 2px $white,
 				            inset 0 0 0 4px $fuchsia;
 			}
+		}
+
+		@media screen and ( max-width: $bkpt-tablet ) {
+			grid-template-columns: 1fr;
+			grid-gap: 30px 0;
+			padding-left: 20px;
+			padding-right: 20px;
 		}
 	}
 
@@ -90,6 +100,14 @@
 			grid-template-columns: repeat( 4, 1fr );
 			grid-gap: 30px;
 			align-items: center;
+
+			@media screen and ( max-width: $bkpt-tablet ) {
+				grid-template-columns: repeat( 2, 1fr );
+			}
+
+			@media screen and ( max-width: $bkpt-phone ) {
+				grid-template-columns: 1fr;
+			}
 		}
 
 		.sponsor-logo {
