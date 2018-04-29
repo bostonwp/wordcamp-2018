@@ -18,7 +18,7 @@ Once merged, check that your updates are on the live site 🎉
 
 ### Style
 
-The entire page is using one font, Adobe Caslon Pro, which we're loading from typekit (this is set up on the live site in Appearance > Fonts).
+We're using two fonts in this theme, both loaded from TypeKit. For the body, Proxima Nova; and for headers, Freight Sans Condensed Pro. The typekit ID is set in Appearance > Fonts.
 
 ### CSS Structure
 
@@ -44,7 +44,7 @@ These are what they sound like :)
 
 #### `widgets`
 
-The styling for each widget on the page, if it needs custom styles. Each widget should be a new file in `widgets/`.
+The styling for each widget-area on the page, if it needs custom styles. Each widget should be a new file in `widgets/`.
 
 #### `content`
 
