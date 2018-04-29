@@ -367,12 +367,12 @@ a.cta-button {
     content: ''; }
   .custom-header:before {
     height: 300px;
-    background: transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMDAnIGhlaWdodD0nNzUnPjxwYXRoIGZpbGw9JyMzOGNjZDUnIGQ9J00zMDAgMGwzMDAgNzVIMHonLz48L3N2Zz4=") no-repeat center;
+    background: transparent url("http://svg.redradar.net/boston-2018/teal-tri.svg") no-repeat center;
     background-size: 100% 100%; }
   .custom-header:after {
     bottom: -1px;
     height: 400px;
-    background: transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMDAnIGhlaWdodD0nMTAwJz48cGF0aCBmaWxsPScjRkZGJyBkPSdNMCAwbDMwMCAxMDBIMHonLz48L3N2Zz4=") no-repeat center;
+    background: transparent url("http://svg.redradar.net/boston-2018/white-tri.svg") no-repeat center;
     background-size: 100% 100%; }
 
 /* Try a smaller logo on interior pages */
@@ -680,7 +680,7 @@ body.home .wp-block-cover-image {
     height: 20vh;
     min-height: 120px;
     max-height: 192px;
-    background: transparent url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSczMDAnIGhlaWdodD0nMTAwJz48cGF0aCBmaWxsPScjRkZGJyBkPSdNMzAwIDBsMzAwIDEwMEgweicvPjwvc3ZnPg==") no-repeat center;
+    background: transparent url("http://svg.redradar.net/boston-2018/white-tri-flip.svg") no-repeat center;
     background-size: 100% 100%; }
 
 body.home .wp-block-cover-image-text {
