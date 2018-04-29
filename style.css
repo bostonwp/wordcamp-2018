@@ -353,6 +353,7 @@ a.cta-button {
 .custom-header {
   background: #1d215f;
   position: relative; }
+  .custom-header .wp-custom-header,
   .custom-header .custom-logo-link {
     display: block;
     margin: 0 auto;
@@ -377,6 +378,7 @@ a.cta-button {
             clip-path: polygon(0% 0%, 100% 100%, 0% 100%); }
 
 /* Try a smaller logo on interior pages */
+body:not(.home) .custom-header .wp-custom-header,
 body:not(.home) .custom-header .custom-logo-link {
   padding-top: 100px;
   padding-bottom: 130px;

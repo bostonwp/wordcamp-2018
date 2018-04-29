@@ -150,6 +150,7 @@
 	background: $dark-blue;
 	position: relative;
 
+	.wp-custom-header,
 	.custom-logo-link {
 		display: block;
 		margin: 0 auto;
@@ -183,6 +184,7 @@
 /* Try a smaller logo on interior pages */
 body:not(.home) {
 	.custom-header {
+		.wp-custom-header,
 		.custom-logo-link {
 			padding-top: 100px;
 			padding-bottom: 130px;
