@@ -4,10 +4,14 @@ body.home {
 		display: none;
 	}
 
-	.wp-block-cover-image {
+	.hentry {
+		position: relative;
 		height: 100vh;
 		min-height: 600px;
 		max-height: 960px;
+		background: url( "http://svg.redradar.net/boston-2018/photo.png" ) no-repeat center;
+		background-size: cover;
+		display: grid;
 
 		&:after {
 			content: '';
@@ -23,10 +27,13 @@ body.home {
 		}
 	}
 
-	.wp-block-cover-image-text {
+	.entry-content {
 		max-width: $size-post-width;
 		@include font-size( $font-size-body );
 		line-height: 1.55;
+		color: $white;
+		text-align: center;
+		margin: auto;
 
 		.cfa-title {
 			display: block;

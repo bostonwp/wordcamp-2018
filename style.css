@@ -667,11 +667,15 @@ body.home .entry-header,
 body.home .entry-footer {
   display: none; }
 
-body.home .wp-block-cover-image {
+body.home .hentry {
+  position: relative;
   height: 100vh;
   min-height: 600px;
-  max-height: 960px; }
-  body.home .wp-block-cover-image:after {
+  max-height: 960px;
+  background: url("http://svg.redradar.net/boston-2018/photo.png") no-repeat center;
+  background-size: cover;
+  display: grid; }
+  body.home .hentry:after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -683,12 +687,15 @@ body.home .wp-block-cover-image {
     background: transparent url("http://svg.redradar.net/boston-2018/white-tri-flip.svg") no-repeat center;
     background-size: 100% 100%; }
 
-body.home .wp-block-cover-image-text {
+body.home .entry-content {
   max-width: 780px;
   font-size: 20px;
   font-size: 2rem;
-  line-height: 1.55; }
-  body.home .wp-block-cover-image-text .cfa-title {
+  line-height: 1.55;
+  color: #ffffff;
+  text-align: center;
+  margin: auto; }
+  body.home .entry-content .cfa-title {
     display: block;
     margin-bottom: 30px;
     font-size: 56px;
@@ -697,7 +704,7 @@ body.home .wp-block-cover-image-text {
     font-family: "freight-sans-condensed-pro", sans-serif;
     font-weight: 900;
     text-align: center; }
-  body.home .wp-block-cover-image-text a {
+  body.home .entry-content a {
     display: inline-block;
     padding: 30px 50px;
     font-size: 28px;
@@ -708,12 +715,12 @@ body.home .wp-block-cover-image-text {
     text-decoration: none;
     color: #1d215f;
     background: #c6dc00; }
-    body.home .wp-block-cover-image-text a:hover, body.home .wp-block-cover-image-text a:active, body.home .wp-block-cover-image-text a:focus {
+    body.home .entry-content a:hover, body.home .entry-content a:active, body.home .entry-content a:focus {
       -webkit-box-shadow: 0 2px 7px 2px rgba(79, 88, 0, 0.2), 0 1px 1px 0 rgba(79, 88, 0, 0.1);
               box-shadow: 0 2px 7px 2px rgba(79, 88, 0, 0.2), 0 1px 1px 0 rgba(79, 88, 0, 0.1); }
-    body.home .wp-block-cover-image-text a:focus {
+    body.home .entry-content a:focus {
       outline: 2px solid #1d215f; }
-    body.home .wp-block-cover-image-text a:hover, body.home .wp-block-cover-image-text a:active, body.home .wp-block-cover-image-text a:focus {
+    body.home .entry-content a:hover, body.home .entry-content a:active, body.home .entry-content a:focus {
       color: #1d215f; }
 
 body.error404 .page-content {
