@@ -169,15 +169,15 @@
 
 	&:before {
 		height: 300px;
-		background: $teal;
-		clip-path: polygon( 100% 0%, 100% 100%, 0% 100% );
+		background: transparent url( "#{$teal-triangle}" ) no-repeat center;
+		background-size: 100% 100%;
 	}
 
 	&:after {
 		bottom: -1px;
 		height: 400px;
-		background: $white;
-		clip-path: polygon( 0% 0%, 100% 100%, 0% 100% );
+		background: transparent url( "#{$white-triangle}" ) no-repeat center;
+		background-size: 100% 100%;
 	}
 }
 

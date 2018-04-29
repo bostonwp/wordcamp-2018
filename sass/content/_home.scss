@@ -18,8 +18,8 @@ body.home {
 			height: 20vh;
 			min-height: 120px;
 			max-height: 192px;
-			background: $white;
-			clip-path: polygon( 100% 0%, 100% 100%, 0% 100% );
+			background: transparent url( "#{$white-triangle-flip}" ) no-repeat center;
+			background-size: 100% 100%;
 		}
 	}
 

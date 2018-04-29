@@ -26,3 +26,9 @@ $ugly-yellow-40: rgba(198, 220, 0, 0.4);
 $ugly-yellow-10: rgba(198, 220, 0, 0.1);
 
 $color-text: $dark-blue;
+
+$white-triangle: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='100'><path fill='#FFF' d='M0 0l300 100H0z'/></svg>";
+
+$white-triangle-flip: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='100'><path fill='#FFF' d='M300 0l300 100H0z'/></svg>";
+
+$teal-triangle: "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='75'><path fill='#38ccd5' d='M300 0l300 75H0z'/></svg>";
