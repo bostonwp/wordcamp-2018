@@ -608,6 +608,8 @@ body:not(.home) .custom-header:after {
       border-radius: 0; }
     #footer-widget-1 form p {
       margin-bottom: 0; }
+  #footer-widget-1 #subscribe-email input {
+    width: 100%; }
   #footer-widget-1 #subscribe-text {
     grid-column: 1 / span 2; }
     @media screen and (max-width: 450px) {
