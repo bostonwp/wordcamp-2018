@@ -665,6 +665,23 @@ body:not(.home) .site-main {
     .entry-content .contact-form label span {
       color: #a00a74; }
 
+.post-navigation {
+  border-top: 1px solid #89dfee;
+  border-bottom: 1px solid #89dfee;
+  padding: 10px 0;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  .post-navigation a {
+    color: #1d215f; }
+    .post-navigation a:hover, .post-navigation a:active, .post-navigation a:focus {
+      color: #1d215f; }
+  .post-navigation .nav-previous:before {
+    content: '\2190';
+    margin-right: 4px; }
+  .post-navigation .nav-next:after {
+    content: '\2192';
+    margin-left: 4px; }
+
 body.home .entry-header,
 body.home .entry-footer {
   display: none; }

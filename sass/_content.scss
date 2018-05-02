@@ -57,5 +57,30 @@ body:not(.home) .site-main {
 	}
 }
 
+.post-navigation {
+	border-top: 1px solid $tiffany-blue;
+	border-bottom: 1px solid $tiffany-blue;
+	padding: 10px 0;
+	@include font-size( $font-size-small );
+
+	a {
+		color: $color-text;
+
+		@include hover-state {
+			color: $color-text;
+		}
+	}
+
+	.nav-previous:before {
+		content: '\2190';
+		margin-right: 4px;
+	}
+
+	.nav-next:after {
+		content: '\2192';
+		margin-left: 4px;
+	}
+}
+
 @import 'content/home';
 @import 'content/404';
