@@ -41,9 +41,13 @@
 		li.focus {
 			a {
 				color: $dark-blue;
+				margin-left: -15px;
 
 				&:before {
+					display: inline-block;
 					content: '\25cf';
+					width: 13px;
+					margin-right: 2px;
 				}
 			}
 		}

@@ -284,10 +284,14 @@ a.cta-button {
       width: 17em; }
     .page-navigation-container ul ul li:hover a,
     .page-navigation-container ul ul li.focus a {
-      color: #1d215f; }
+      color: #1d215f;
+      margin-left: -15px; }
       .page-navigation-container ul ul li:hover a:before,
       .page-navigation-container ul ul li.focus a:before {
-        content: '\25cf'; }
+        display: inline-block;
+        content: '\25cf';
+        width: 13px;
+        margin-right: 2px; }
   .page-navigation-container .callout {
     position: absolute;
     right: 0;
