@@ -13,6 +13,8 @@
 
 	.widget {
 		@include container( $size-post-width );
+
+		color: $white;
 	}
 
 	form {

@@ -597,7 +597,8 @@ body:not(.home) .custom-header:after {
     text-align: center; }
   #footer-widget-1 .widget {
     margin: 0 auto;
-    max-width: 780px; }
+    max-width: 780px;
+    color: #ffffff; }
   #footer-widget-1 form {
     display: grid;
     grid-template-columns: 1fr 200px; }
