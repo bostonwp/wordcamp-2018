@@ -1,0 +1,17 @@
+.wcorg-organizers {
+	.wcorg-organizer {
+		clear: both;
+		padding-top: 30px;
+	}
+
+	h2 {
+		margin-top: 0;
+	}
+
+	.avatar {
+		float: left;
+		margin-right: 30px;
+		border-radius: 50%;
+		box-shadow: 7px 7px 0 $fuchsia, -7px -7px 0 $dark-blue;
+	}
+}

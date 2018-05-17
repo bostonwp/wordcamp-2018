@@ -761,6 +761,20 @@ body.error404 .search-form {
   body.error404 .search-form input {
     border-radius: 0; }
 
+.wcorg-organizers .wcorg-organizer {
+  clear: both;
+  padding-top: 30px; }
+
+.wcorg-organizers h2 {
+  margin-top: 0; }
+
+.wcorg-organizers .avatar {
+  float: left;
+  margin-right: 30px;
+  border-radius: 50%;
+  -webkit-box-shadow: 7px 7px 0 #a00a74, -7px -7px 0 #1d215f;
+          box-shadow: 7px 7px 0 #a00a74, -7px -7px 0 #1d215f; }
+
 .comments-title,
 .comment-reply-title {
   margin: 40px 0;
