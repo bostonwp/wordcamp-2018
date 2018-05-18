@@ -54,6 +54,10 @@
 			@include font-size( $font-size-level-2 );
 			line-height: 1.1;
 			color: $white;
+
+			&.span-2 {
+				grid-column: 1 / span 2;
+			}
 		}
 
 		a {
