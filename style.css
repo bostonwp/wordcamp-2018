@@ -573,7 +573,7 @@ body:not(.home) .custom-header:after {
     margin: 0 auto;
     max-width: 1160px;
     padding: 0 40px; }
-    #primary-sidebar .wcb_widget_sponsors .sponsor-level.bronze, #primary-sidebar .wcb_widget_sponsors .sponsor-level.silver,
+    #primary-sidebar .wcb_widget_sponsors .sponsor-level.bronze, #primary-sidebar .wcb_widget_sponsors .sponsor-level.silver, #primary-sidebar .wcb_widget_sponsors .sponsor-level.small-business, #primary-sidebar .wcb_widget_sponsors .sponsor-level.consultant,
     #primary-sidebar .wcb_widget_sponsors .sponsor-level .sponsor-level-title {
       display: none; }
     #primary-sidebar .wcb_widget_sponsors .sponsor-level {
