@@ -136,6 +136,12 @@ label {
 	font-weight: bold;
 }
 
+input[type="checkbox"],
+input[type="radio"] {
+	font-size: 1em;
+	vertical-align: middle;
+}
+
 input[type='button'],
 input[type='submit'],
 input[type='reset'],

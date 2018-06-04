@@ -1,0 +1,133 @@
+.tix_tickets_table,
+.tix-ticket-form {
+	.tix-column-description {
+		max-width: 200px;
+	}
+
+	th.tix-column-description {
+		text-align: left;
+	}
+
+	td.tix-column-description {
+		padding-top: 15px;
+	}
+
+	.tix-column-remaining {
+		display: none;
+	}
+
+	.tix-column-price,
+	.tix-column-quantity {
+		text-align: right;
+		width: 6em;
+	}
+
+	.tix-row-coupon td {
+		padding-top: 15px;
+	}
+
+	.tix-ticket-excerpt {
+		@include font-size( 1.8 );
+	}
+}
+
+.tix-order-summary {
+	th {
+		padding-bottom: 10px;
+		border-bottom: 2px solid $tiffany-blue;
+	}
+}
+
+#tix {
+	margin-bottom: 30px;
+
+	.tix-error {
+		// background: lighten( mix( $beige, $red ), 30% );
+		// border: solid 1px $red;
+	}
+}
+
+.tix-order-summary {
+	.tix-column-quantity {
+		text-align: left;
+	}
+
+	.tix-row-total td,
+	.tix-column-price {
+		text-align: right;
+	}
+
+	.tix-row-total td {
+		padding-top: 15px;
+	}
+}
+
+.tix-attendee-form {
+	@include font-size( 1.8 );
+
+	th, td {
+		padding-bottom: 20px;
+	}
+
+	.tix-left {
+		width: 40% !important;
+	}
+
+	.tix-right {
+		padding-left: 30px;
+
+		label {
+			font-weight: normal;
+			line-height: 1.2;
+		}
+
+		br {
+			display: none;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		input[type="url"] {
+			width: 100%;
+		}
+
+		textarea {
+			width: 100%;
+			height: 150px;
+			resize: vertical;
+		}
+	}
+}
+
+// Apply Coupon section
+#tix-coupon-container:not([style="display: none;"]) {
+	width: 100%;
+	display: flex !important;
+	align-items: center;
+
+	&:before {
+		content: 'Coupon Code:';
+		display: inline-block;
+		width: 100px;
+		text-align: left;
+		@include font-size( 1.6 );
+	}
+
+	#tix-coupon-input {
+		padding: 9px 20px 12px;
+		width: calc( 100% - 250px);
+		border-radius: 0;
+	}
+
+	input[name="tix_coupon_submit"] {
+		float: right;
+	}
+
+	@media ( max-width: 400px ) {
+		input {
+			display: block;
+			margin: 0;
+			width: 100%;
+		}
+	}
+}

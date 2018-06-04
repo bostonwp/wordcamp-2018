@@ -161,6 +161,11 @@ label {
   margin-bottom: 10px;
   font-weight: bold; }
 
+input[type="checkbox"],
+input[type="radio"] {
+  font-size: 1em;
+  vertical-align: middle; }
+
 input[type='button'],
 input[type='submit'],
 input[type='reset'],
@@ -782,6 +787,105 @@ body.error404 .search-form {
   border-radius: 50%;
   -webkit-box-shadow: 7px 7px 0 #a00a74, -7px -7px 0 #1d215f;
           box-shadow: 7px 7px 0 #a00a74, -7px -7px 0 #1d215f; }
+
+.tix_tickets_table .tix-column-description,
+.tix-ticket-form .tix-column-description {
+  max-width: 200px; }
+
+.tix_tickets_table th.tix-column-description,
+.tix-ticket-form th.tix-column-description {
+  text-align: left; }
+
+.tix_tickets_table td.tix-column-description,
+.tix-ticket-form td.tix-column-description {
+  padding-top: 15px; }
+
+.tix_tickets_table .tix-column-remaining,
+.tix-ticket-form .tix-column-remaining {
+  display: none; }
+
+.tix_tickets_table .tix-column-price,
+.tix_tickets_table .tix-column-quantity,
+.tix-ticket-form .tix-column-price,
+.tix-ticket-form .tix-column-quantity {
+  text-align: right;
+  width: 6em; }
+
+.tix_tickets_table .tix-row-coupon td,
+.tix-ticket-form .tix-row-coupon td {
+  padding-top: 15px; }
+
+.tix_tickets_table .tix-ticket-excerpt,
+.tix-ticket-form .tix-ticket-excerpt {
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.tix-order-summary th {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #89dfee; }
+
+#tix {
+  margin-bottom: 30px; }
+
+.tix-order-summary .tix-column-quantity {
+  text-align: left; }
+
+.tix-order-summary .tix-row-total td,
+.tix-order-summary .tix-column-price {
+  text-align: right; }
+
+.tix-order-summary .tix-row-total td {
+  padding-top: 15px; }
+
+.tix-attendee-form {
+  font-size: 18px;
+  font-size: 1.8rem; }
+  .tix-attendee-form th, .tix-attendee-form td {
+    padding-bottom: 20px; }
+  .tix-attendee-form .tix-left {
+    width: 40% !important; }
+  .tix-attendee-form .tix-right {
+    padding-left: 30px; }
+    .tix-attendee-form .tix-right label {
+      font-weight: normal;
+      line-height: 1.2; }
+    .tix-attendee-form .tix-right br {
+      display: none; }
+    .tix-attendee-form .tix-right input[type="text"],
+    .tix-attendee-form .tix-right input[type="email"],
+    .tix-attendee-form .tix-right input[type="url"] {
+      width: 100%; }
+    .tix-attendee-form .tix-right textarea {
+      width: 100%;
+      height: 150px;
+      resize: vertical; }
+
+#tix-coupon-container:not([style="display: none;"]) {
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  #tix-coupon-container:not([style="display: none;"]):before {
+    content: 'Coupon Code:';
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    font-size: 16px;
+    font-size: 1.6rem; }
+  #tix-coupon-container:not([style="display: none;"]) #tix-coupon-input {
+    padding: 9px 20px 12px;
+    width: calc( 100% - 250px);
+    border-radius: 0; }
+  #tix-coupon-container:not([style="display: none;"]) input[name="tix_coupon_submit"] {
+    float: right; }
+  @media (max-width: 400px) {
+    #tix-coupon-container:not([style="display: none;"]) input {
+      display: block;
+      margin: 0;
+      width: 100%; } }
 
 .comments-title,
 .comment-reply-title {
