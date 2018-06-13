@@ -674,10 +674,6 @@ body:not(.home) .site-main {
 
 .entry-content {
   margin: 20px 0 0; }
-  .entry-content .contact-form label {
-    margin-bottom: 5px; }
-    .entry-content .contact-form label span {
-      color: #a00a74; }
 
 .post-navigation {
   border-top: 1px solid #89dfee;
@@ -773,6 +769,26 @@ body.error404 .search-form {
     margin: 0; }
   body.error404 .search-form input {
     border-radius: 0; }
+
+.contact-form > div {
+  margin-bottom: 20px; }
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 5px;
+  margin-bottom: 7px !important;
+  vertical-align: middle; }
+
+.contact-form .grunion-radio-label,
+.contact-form .grunion-checkbox-multiple-label,
+.contact-form .grunion-checkbox-label {
+  font-weight: normal !important; }
+
+.contact-form .grunion-field-label {
+  margin-bottom: 5px; }
+  .contact-form .grunion-field-label span {
+    margin-left: 10px;
+    color: #a00a74; }
 
 .wcorg-organizers .wcorg-organizer {
   clear: both;
