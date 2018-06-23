@@ -1,0 +1,272 @@
+body.page-slug-schedule {
+	.site-main {
+		@include container( $size-main-width );
+	}
+}
+
+.wcpt-schedule {
+	margin-bottom: 60px;
+	border-bottom: 2px solid $ugly-yellow;
+
+	th {
+		padding: 20px 15px 5px;
+		border-bottom: 2px solid $ugly-yellow;
+		color: $color-text;
+		font-weight: 900;
+		text-align: left;
+	}
+
+	.wcpt-track-description {
+		display: block;
+		font-weight: normal;
+		@include font-size( 1.4 );
+		text-transform: none;
+		letter-spacing: 0;
+		color: $color-text;
+	}
+
+	.wcpt-session-type-session:before {
+		border: none;
+		color: $color-text;
+	}
+
+	td {
+		@include font-size( 1.6 );
+		box-sizing: border-box;
+		padding: 20px 15px;
+		border: 2px solid $ugly-yellow;
+		border-bottom: none;
+
+		@media screen and (min-width: 701px) {
+			width: 22.5%;
+
+			&.wcpt-time {
+				width: 10%;
+				@include font-size( 1.4 );
+				background: rgba( $ugly-yellow, 0.1 );
+			}
+		}
+
+		@media screen and (max-width: 700px) {
+			margin-bottom: 0;
+
+			&:last-of-type {
+				border-bottom: none;
+			}
+		}
+
+		&.wcpt-session-empty {
+			border: none;
+
+			&:last-of-type {
+				border-right: 2px solid $ugly-yellow;
+			}
+		}
+	}
+
+	.global-session td,
+	.wcpt-session-type-custom {
+		text-align: center;
+
+		&.wcpt-time {
+			text-align: left;
+		}
+	}
+
+	.wcpt-session-title {}
+
+	.wcpt-session-speakers {
+		display: block;
+		font-style: italic;
+	}
+
+	td[class*='wcb-track']:before {
+		display: block;
+		margin: -20px -15px 5px;
+		padding: 10px 15px;
+		@include uppercase( 1.1, 1 );
+		color: $color-text;
+		background: rgba( $ugly-yellow, 0.5 );
+		text-align: center;
+	}
+
+	// Customized for grid-schedule. Smaller screens go single col and use track names to label rooms.
+	@media screen and (min-width: 701px) {
+		.wcb-track-advanced-developers:before {
+			content: 'Advanced Developers'
+		}
+		.wcb-track-business:before {
+			content: 'Business & Freelancing'
+		}
+		.wcb-track-community:before {
+			content: 'Community'
+		}
+		.wcb-track-content:before {
+			content: 'Content & Social Media'
+		}
+		.wcb-track-developers:before {
+			content: 'Developers'
+		}
+		.wcb-track-gutenberg:before {
+			content: 'Gutenberg'
+		}
+		.wcb-track-higher-education:before {
+			content: 'Higher Education'
+		}
+		.wcb-track-intro-to-wordpress:before {
+			content: 'Intro to WordPress'
+		}
+		.wcb-track-lightning-talks:before {
+			content: 'Lightning Talks'
+		}
+		.wcb-track-site-builders:before {
+			content: 'Site Builders'
+		}
+		.wcb-track-workshops:before {
+			content: 'Workshops'
+		}
+	}
+
+	// Small screen specific fixes
+	@media screen and (max-width: 700px) {
+		border-bottom: none;
+
+		// Fix global session location
+		.global-session td[class*='wcb-track']:before {
+			content: 'Large Ballroom';
+		}
+
+		tr {
+			border: none;
+			border-bottom: 2px solid $ugly-yellow;
+		}
+
+		td.wcpt-session-empty {
+			display: none;
+		}
+	}
+}
+
+// Add end time
+.wcpt-time:after {
+	display: inline-block;
+
+	// Saturday
+	.wcpt-schedule-saturday .wcpt-time-800am & {
+		content: '– 9:00 am';
+	}
+	.wcpt-schedule-saturday .wcpt-time-900am & {
+		content: '– 9:10 am';
+	}
+	.wcpt-schedule-saturday .wcpt-time-910am & {
+		content: '– 10:00 am';
+	}
+	.wcpt-schedule-saturday .wcpt-time-1000am & {
+		content: '– 10:10 am';
+	}
+	.wcpt-schedule-saturday .wcpt-time-1010am & {
+		content: '– 10:50 am';
+	}
+	.wcpt-schedule-saturday .wcpt-time-1050am & {
+		content: '– 11:00 am';
+	}
+	.wcpt-schedule-saturday .wcpt-time-1100am & {
+		content: '– 11:40 am';
+	}
+	.wcpt-schedule-saturday .wcpt-time-1140am & {
+		content: '– 11:50 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-1150am & {
+		content: '– 12:30 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-1230pm & {
+		content: '– 1:30 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-130pm & {
+		content: '– 1:45 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-145pm & {
+		content: '– 2:10 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-210pm & {
+		content: '– 2:20 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-220pm & {
+		content: '– 3:00 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-300pm & {
+		content: '– 3:10 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-310pm & {
+		content: '– 3:50 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-350pm & {
+		content: '– 4:10 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-410pm & {
+		content: '– 4:50 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-450pm & {
+		content: '– 5:00 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-500pm & {
+		content: '– 5:40 pm';
+	}
+	.wcpt-schedule-saturday .wcpt-time-545pm & {
+		content: '– 9:00 pm';
+	}
+
+	// Sunday
+	.wcpt-schedule-sunday .wcpt-time-1100am & {
+		content: '– 11:30 am';
+	}
+	.wcpt-schedule-sunday .wcpt-time-1130am & {
+		content: '– 12:10 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-1210pm & {
+		content: '– 12:20 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-1220pm & {
+		content: '– 1:00 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-100pm & {
+		content: '– 1:10 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-110pm & {
+		content: '– 1:50 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-150pm & {
+		content: '– 2:10 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-210pm & {
+		content: '– 2:50 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-250pm & {
+		content: '– 3:00 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-300pm & {
+		content: '– 3:40 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-340pm & {
+		content: '– 3:50 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-350pm & {
+		content: '– 4:30 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-430pm & {
+		content: '– 4:40 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-440pm & {
+		content: '– 5:20 pm';
+	}
+	.wcpt-schedule-sunday .wcpt-time-520pm & {
+		content: '– 5:30 pm';
+	}
+
+
+	// Fix global session location
+	@media screen and (max-width: 700px) {
+		display: inline-block;
+		margin-left: 5px;
+	}
+}
