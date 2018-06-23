@@ -942,6 +942,12 @@ body.page-slug-schedule .site-main {
       border: none; }
       .wcpt-schedule td.wcpt-session-empty:last-of-type {
         border-right: 2px solid #c6dc00; }
+    .wcpt-schedule td.wcb-favourite-session {
+      background: rgba(198, 220, 0, 0.15); }
+      .wcpt-schedule td.wcb-favourite-session a.fav-session-button {
+        color: #a00a74; }
+    .wcpt-schedule td div.wcb-session-favourite-icon a.fav-session-button:hover {
+      color: #a00a74 !important; }
   .wcpt-schedule .global-session td:not(.wcpt-time) {
     text-align: center; }
   .wcpt-schedule .wcpt-session-title {
@@ -984,7 +990,7 @@ body.page-slug-schedule .site-main {
     line-height: 1;
     color: #1d215f;
     border: none;
-    background: rgba(198, 220, 0, 0.5);
+    background: rgba(198, 220, 0, 0.4);
     text-align: center; }
   @media screen and (min-width: 701px) {
     .wcpt-schedule .wcb-track-advanced-developers:before {

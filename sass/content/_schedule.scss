@@ -48,6 +48,20 @@ body.page-slug-schedule {
 				border-right: 2px solid $ugly-yellow;
 			}
 		}
+
+		&.wcb-favourite-session {
+			background: rgba( $ugly-yellow, 0.15 );
+
+			a.fav-session-button {
+				color: $fuchsia;
+			}
+		}
+
+		div.wcb-session-favourite-icon a.fav-session-button {
+			&:hover {
+				color: $fuchsia !important;
+			}
+		}
 	}
 
 	.global-session td:not(.wcpt-time) {
@@ -112,7 +126,7 @@ body.page-slug-schedule {
 		line-height: 1;
 		color: $color-text;
 		border: none;
-		background: rgba( $ugly-yellow, 0.5 );
+		background: rgba( $ugly-yellow, 0.4 );
 		text-align: center;
 	}
 
