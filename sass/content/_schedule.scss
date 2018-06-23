@@ -16,20 +16,6 @@ body.page-slug-schedule {
 		text-align: left;
 	}
 
-	.wcpt-track-description {
-		display: block;
-		font-weight: normal;
-		@include font-size( 1.4 );
-		text-transform: none;
-		letter-spacing: 0;
-		color: $color-text;
-	}
-
-	.wcpt-session-type-session:before {
-		border: none;
-		color: $color-text;
-	}
-
 	td {
 		@include font-size( 1.6 );
 		box-sizing: border-box;
@@ -41,7 +27,7 @@ body.page-slug-schedule {
 			width: 22.5%;
 
 			&.wcpt-time {
-				width: 10%;
+				width: 11%;
 				@include font-size( 1.4 );
 				background: rgba( $ugly-yellow, 0.1 );
 			}
@@ -64,33 +50,73 @@ body.page-slug-schedule {
 		}
 	}
 
-	.global-session td,
+	.global-session td:not(.wcpt-time) {
+		text-align: center;
+	}
+
+	.wcpt-session-title {
+		font-weight: 600;
+		text-decoration: underline;
+	}
+
+	.wcpt-session-speakers {
+		display: block;
+		margin-top: 8px;
+
+		a {
+			color: $color-text;
+		}
+	}
+
 	.wcpt-session-type-custom {
 		text-align: center;
 
 		&.wcpt-time {
 			text-align: left;
 		}
+
+		.wcpt-session-title {
+			text-decoration: none;
+		}
 	}
 
-	.wcpt-session-title {}
+	// Small screen specific fixes
+	@media screen and (max-width: 700px) {
+		border-bottom: none;
 
-	.wcpt-session-speakers {
-		display: block;
-		font-style: italic;
+		// Fix global session location
+		.global-session td[class*='wcb-track']:before {
+			content: 'Large Ballroom';
+		}
+
+		tr {
+			border: none;
+			border-bottom: 2px solid $ugly-yellow;
+		}
+
+		td.wcpt-session-empty {
+			display: none;
+		}
+
+		.wcpt-session-title {
+			word-wrap: break-word;
+		}
 	}
 
+	// Add track labels to each grid-cell
 	td[class*='wcb-track']:before {
 		display: block;
 		margin: -20px -15px 5px;
 		padding: 10px 15px;
 		@include uppercase( 1.1, 1 );
+		line-height: 1;
 		color: $color-text;
+		border: none;
 		background: rgba( $ugly-yellow, 0.5 );
 		text-align: center;
 	}
 
-	// Customized for grid-schedule. Smaller screens go single col and use track names to label rooms.
+	// Large screen only, smaller screens go single col and show all track names from an attribute
 	@media screen and (min-width: 701px) {
 		.wcb-track-advanced-developers:before {
 			content: 'Advanced Developers'
@@ -124,25 +150,6 @@ body.page-slug-schedule {
 		}
 		.wcb-track-workshops:before {
 			content: 'Workshops'
-		}
-	}
-
-	// Small screen specific fixes
-	@media screen and (max-width: 700px) {
-		border-bottom: none;
-
-		// Fix global session location
-		.global-session td[class*='wcb-track']:before {
-			content: 'Large Ballroom';
-		}
-
-		tr {
-			border: none;
-			border-bottom: 2px solid $ugly-yellow;
-		}
-
-		td.wcpt-session-empty {
-			display: none;
 		}
 	}
 }
@@ -262,7 +269,6 @@ body.page-slug-schedule {
 	.wcpt-schedule-sunday .wcpt-time-520pm & {
 		content: '– 5:30 pm';
 	}
-
 
 	// Fix global session location
 	@media screen and (max-width: 700px) {

@@ -917,17 +917,6 @@ body.page-slug-schedule .site-main {
     color: #1d215f;
     font-weight: 900;
     text-align: left; }
-  .wcpt-schedule .wcpt-track-description {
-    display: block;
-    font-weight: normal;
-    font-size: 14px;
-    font-size: 1.4rem;
-    text-transform: none;
-    letter-spacing: 0;
-    color: #1d215f; }
-  .wcpt-schedule .wcpt-session-type-session:before {
-    border: none;
-    color: #1d215f; }
   .wcpt-schedule td {
     font-size: 16px;
     font-size: 1.6rem;
@@ -940,7 +929,7 @@ body.page-slug-schedule .site-main {
       .wcpt-schedule td {
         width: 22.5%; }
         .wcpt-schedule td.wcpt-time {
-          width: 10%;
+          width: 11%;
           font-size: 14px;
           font-size: 1.4rem;
           background: rgba(198, 220, 0, 0.1); } }
@@ -953,15 +942,34 @@ body.page-slug-schedule .site-main {
       border: none; }
       .wcpt-schedule td.wcpt-session-empty:last-of-type {
         border-right: 2px solid #c6dc00; }
-  .wcpt-schedule .global-session td,
-  .wcpt-schedule .wcpt-session-type-custom {
+  .wcpt-schedule .global-session td:not(.wcpt-time) {
     text-align: center; }
-    .wcpt-schedule .global-session td.wcpt-time,
-    .wcpt-schedule .wcpt-session-type-custom.wcpt-time {
-      text-align: left; }
+  .wcpt-schedule .wcpt-session-title {
+    font-weight: 600;
+    text-decoration: underline; }
   .wcpt-schedule .wcpt-session-speakers {
     display: block;
-    font-style: italic; }
+    margin-top: 8px; }
+    .wcpt-schedule .wcpt-session-speakers a {
+      color: #1d215f; }
+  .wcpt-schedule .wcpt-session-type-custom {
+    text-align: center; }
+    .wcpt-schedule .wcpt-session-type-custom.wcpt-time {
+      text-align: left; }
+    .wcpt-schedule .wcpt-session-type-custom .wcpt-session-title {
+      text-decoration: none; }
+  @media screen and (max-width: 700px) {
+    .wcpt-schedule {
+      border-bottom: none; }
+      .wcpt-schedule .global-session td[class*='wcb-track']:before {
+        content: 'Large Ballroom'; }
+      .wcpt-schedule tr {
+        border: none;
+        border-bottom: 2px solid #c6dc00; }
+      .wcpt-schedule td.wcpt-session-empty {
+        display: none; }
+      .wcpt-schedule .wcpt-session-title {
+        word-wrap: break-word; } }
   .wcpt-schedule td[class*='wcb-track']:before {
     display: block;
     margin: -20px -15px 5px;
@@ -973,7 +981,9 @@ body.page-slug-schedule .site-main {
     letter-spacing: 1px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1;
     color: #1d215f;
+    border: none;
     background: rgba(198, 220, 0, 0.5);
     text-align: center; }
   @media screen and (min-width: 701px) {
@@ -999,16 +1009,6 @@ body.page-slug-schedule .site-main {
       content: 'Site Builders'; }
     .wcpt-schedule .wcb-track-workshops:before {
       content: 'Workshops'; } }
-  @media screen and (max-width: 700px) {
-    .wcpt-schedule {
-      border-bottom: none; }
-      .wcpt-schedule .global-session td[class*='wcb-track']:before {
-        content: 'Large Ballroom'; }
-      .wcpt-schedule tr {
-        border: none;
-        border-bottom: 2px solid #c6dc00; }
-      .wcpt-schedule td.wcpt-session-empty {
-        display: none; } }
 
 .wcpt-time:after {
   display: inline-block; }
