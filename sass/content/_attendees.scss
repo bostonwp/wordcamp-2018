@@ -1,0 +1,95 @@
+body.page-slug-attendees {
+	.site-main {
+		@include container( $size-main-width );
+	}
+}
+
+.page-slug-attendees,
+.page-slug-sponsors {
+	#tix-attendees {
+		li {
+			height: auto;
+			text-align: center;
+			padding-top: 5px; // Account for the 5px box shadow
+		}
+
+		.avatar {
+			float: none;
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+			box-shadow: 5px 5px 0 $teal, -5px -5px 0 $fuchsia;
+			margin-bottom: 15px;
+		}
+
+		.tix-attendee-name,
+		.tix-attendee-twitter,
+		.tix-attendee-url {
+			margin-left: 0;
+		}
+
+		.tix-attendee-name {
+			font-weight: bold;
+			@include font-size( 1.8 );
+		}
+
+		.tix-attendee-twitter,
+		.tix-attendee-url {
+			display: block;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			max-width: 130px;
+			margin-left: auto;
+			margin-right: auto;
+			@include font-size( 1.6 );
+		}
+
+		// Layout
+		.tix-attendee-list {
+			max-width: 100%;
+			display: grid;
+			grid-template-columns: repeat( 5, 1fr );
+			grid-gap: 30px 0;
+			padding: 0;
+
+			li {
+				float: none;
+				width: 100%;
+				margin: 0;
+			}
+		}
+
+		@media ( min-width: 1100px ) {
+			.tix-attendee-twitter,
+			.tix-attendee-url {
+				max-width: 200px;
+			}
+		}
+
+		@media ( max-width: 880px ) {
+			.tix-attendee-list {
+				grid-template-columns: repeat( 4, 1fr );
+			}
+		}
+
+		@media ( max-width: 670px ) {
+			.avatar {
+				height: 80px;
+				width: 80px;
+			}
+		}
+
+		@media ( max-width: 620px ) {
+			.tix-attendee-list {
+				grid-template-columns: repeat( 3, 1fr );
+			}
+		}
+
+		@media ( max-width: 430px ) {
+			.tix-attendee-list {
+				grid-template-columns: repeat( 2, 1fr );
+			}
+		}
+	}
+}

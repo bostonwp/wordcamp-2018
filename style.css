@@ -1095,6 +1095,95 @@ body.page-slug-schedule .site-main {
       display: inline-block;
       margin-left: 5px; } }
 
+body.page-slug-attendees .site-main {
+  margin: 0 auto;
+  max-width: 1160px; }
+
+.page-slug-attendees #tix-attendees li,
+.page-slug-sponsors #tix-attendees li {
+  height: auto;
+  text-align: center;
+  padding-top: 5px; }
+
+.page-slug-attendees #tix-attendees .avatar,
+.page-slug-sponsors #tix-attendees .avatar {
+  float: none;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 0 #38ccd5, -5px -5px 0 #a00a74;
+          box-shadow: 5px 5px 0 #38ccd5, -5px -5px 0 #a00a74;
+  margin-bottom: 15px; }
+
+.page-slug-attendees #tix-attendees .tix-attendee-name,
+.page-slug-attendees #tix-attendees .tix-attendee-twitter,
+.page-slug-attendees #tix-attendees .tix-attendee-url,
+.page-slug-sponsors #tix-attendees .tix-attendee-name,
+.page-slug-sponsors #tix-attendees .tix-attendee-twitter,
+.page-slug-sponsors #tix-attendees .tix-attendee-url {
+  margin-left: 0; }
+
+.page-slug-attendees #tix-attendees .tix-attendee-name,
+.page-slug-sponsors #tix-attendees .tix-attendee-name {
+  font-weight: bold;
+  font-size: 18px;
+  font-size: 1.8rem; }
+
+.page-slug-attendees #tix-attendees .tix-attendee-twitter,
+.page-slug-attendees #tix-attendees .tix-attendee-url,
+.page-slug-sponsors #tix-attendees .tix-attendee-twitter,
+.page-slug-sponsors #tix-attendees .tix-attendee-url {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-size: 1.6rem; }
+
+.page-slug-attendees #tix-attendees .tix-attendee-list,
+.page-slug-sponsors #tix-attendees .tix-attendee-list {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px 0;
+  padding: 0; }
+  .page-slug-attendees #tix-attendees .tix-attendee-list li,
+  .page-slug-sponsors #tix-attendees .tix-attendee-list li {
+    float: none;
+    width: 100%;
+    margin: 0; }
+
+@media (min-width: 1100px) {
+  .page-slug-attendees #tix-attendees .tix-attendee-twitter,
+  .page-slug-attendees #tix-attendees .tix-attendee-url,
+  .page-slug-sponsors #tix-attendees .tix-attendee-twitter,
+  .page-slug-sponsors #tix-attendees .tix-attendee-url {
+    max-width: 200px; } }
+
+@media (max-width: 880px) {
+  .page-slug-attendees #tix-attendees .tix-attendee-list,
+  .page-slug-sponsors #tix-attendees .tix-attendee-list {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media (max-width: 670px) {
+  .page-slug-attendees #tix-attendees .avatar,
+  .page-slug-sponsors #tix-attendees .avatar {
+    height: 80px;
+    width: 80px; } }
+
+@media (max-width: 620px) {
+  .page-slug-attendees #tix-attendees .tix-attendee-list,
+  .page-slug-sponsors #tix-attendees .tix-attendee-list {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media (max-width: 430px) {
+  .page-slug-attendees #tix-attendees .tix-attendee-list,
+  .page-slug-sponsors #tix-attendees .tix-attendee-list {
+    grid-template-columns: repeat(2, 1fr); } }
+
 .comments-title,
 .comment-reply-title {
   margin: 40px 0;
