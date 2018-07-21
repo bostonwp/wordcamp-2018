@@ -1186,7 +1186,8 @@ body.page-slug-attendees .site-main {
 
 body.page-template-page-day-of .site-main {
   margin: 0 auto;
-  max-width: 1160px; }
+  max-width: 1160px;
+  margin-top: -60px; }
 
 body.page-template-page-day-of .entry-content h2 {
   font-size: 56px;
