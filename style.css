@@ -1184,6 +1184,19 @@ body.page-slug-attendees .site-main {
   .page-slug-sponsors #tix-attendees .tix-attendee-list {
     grid-template-columns: repeat(2, 1fr); } }
 
+body.page-template-page-day-of .site-main {
+  margin: 0 auto;
+  max-width: 1160px; }
+
+body.page-template-page-day-of .entry-content h2 {
+  font-size: 56px;
+  font-size: 5.6rem;
+  color: #a00a74; }
+
+body.page-template-page-day-of .entry-content h3 {
+  font-size: 42px;
+  font-size: 4.2rem; }
+
 .comments-title,
 .comment-reply-title {
   margin: 40px 0;
