@@ -693,11 +693,11 @@ body:not(.home) .site-main {
     content: '\2192';
     margin-left: 4px; }
 
-body.home .entry-header,
-body.home .entry-footer {
+body.home:not(.page-template-page-day-of) .entry-header,
+body.home:not(.page-template-page-day-of) .entry-footer {
   display: none; }
 
-body.home .hentry {
+body.home:not(.page-template-page-day-of) .hentry {
   position: relative;
   height: 100vh;
   min-height: 600px;
@@ -705,7 +705,7 @@ body.home .hentry {
   background: url("http://svg.redradar.net/boston-2018/photo.png") no-repeat center;
   background-size: cover;
   display: grid; }
-  body.home .hentry:after {
+  body.home:not(.page-template-page-day-of) .hentry:after {
     content: '';
     position: absolute;
     bottom: -1px;
@@ -717,7 +717,7 @@ body.home .hentry {
     background: transparent url("http://svg.redradar.net/boston-2018/white-tri-flip.svg") no-repeat center;
     background-size: 100% 100%; }
 
-body.home .entry-content {
+body.home:not(.page-template-page-day-of) .entry-content {
   max-width: 780px;
   font-size: 20px;
   font-size: 2rem;
@@ -725,7 +725,7 @@ body.home .entry-content {
   color: #ffffff;
   text-align: center;
   margin: auto; }
-  body.home .entry-content .cfa-title {
+  body.home:not(.page-template-page-day-of) .entry-content .cfa-title {
     display: block;
     margin-bottom: 30px;
     font-size: 56px;
@@ -734,7 +734,7 @@ body.home .entry-content {
     font-family: "freight-sans-condensed-pro", sans-serif;
     font-weight: 900;
     text-align: center; }
-  body.home .entry-content a {
+  body.home:not(.page-template-page-day-of) .entry-content a {
     display: inline-block;
     padding: 30px 50px;
     font-size: 28px;
@@ -745,12 +745,12 @@ body.home .entry-content {
     text-decoration: none;
     color: #1d215f;
     background: #c6dc00; }
-    body.home .entry-content a:hover, body.home .entry-content a:active, body.home .entry-content a:focus {
+    body.home:not(.page-template-page-day-of) .entry-content a:hover, body.home:not(.page-template-page-day-of) .entry-content a:active, body.home:not(.page-template-page-day-of) .entry-content a:focus {
       -webkit-box-shadow: 0 2px 7px 2px rgba(79, 88, 0, 0.2), 0 1px 1px 0 rgba(79, 88, 0, 0.1);
               box-shadow: 0 2px 7px 2px rgba(79, 88, 0, 0.2), 0 1px 1px 0 rgba(79, 88, 0, 0.1); }
-    body.home .entry-content a:focus {
+    body.home:not(.page-template-page-day-of) .entry-content a:focus {
       outline: 2px solid #1d215f; }
-    body.home .entry-content a:hover, body.home .entry-content a:active, body.home .entry-content a:focus {
+    body.home:not(.page-template-page-day-of) .entry-content a:hover, body.home:not(.page-template-page-day-of) .entry-content a:active, body.home:not(.page-template-page-day-of) .entry-content a:focus {
       color: #1d215f; }
 
 body.error404 .page-content {

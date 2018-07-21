@@ -1,4 +1,4 @@
-body.home {
+body.home:not(.page-template-page-day-of) {
 	.entry-header,
 	.entry-footer {
 		display: none;
